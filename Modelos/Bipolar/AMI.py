@@ -1,17 +1,19 @@
-class NRZI:
+class AMI:
     def __init__(self, serial):
         self.serial = serial
         self.resultado = self.codificar()
 
     def codificar(self):
-        """Codifica el serial usando NRZ-I"""
+        """Codifica el serial usando AMI (Alternate Mark Inversion)"""
         niveles = []
-        nivel_actual = 1  # nivel inicial
+        polaridad = 1
 
         for bit in self.serial:
             if bit == '1':
-                nivel_actual *= -1  # cambia nivel si hay 1
-            niveles.append(nivel_actual)
+                niveles.append(polaridad)
+                polaridad *= -1  # alternar polaridad
+            else:
+                niveles.append(0)
 
         return niveles
 

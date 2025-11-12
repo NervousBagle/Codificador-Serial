@@ -1,51 +1,42 @@
-from re import match
 from Controladores.GraficadorControl import GraficadorControl
 
-import Modelos as modelos
+from Modelos.Unipolar import Unipolar
 
-from Modelos import Unipolar
+from Modelos.Polar.NRZL import NRZL
+from Modelos.Polar.NRZI import NRZI
+from Modelos.Polar.RZ import RZ
+from Modelos.Polar.Manchester import Manchester
+from Modelos.Polar.ManchesterDiferencial import ManchesterDiferencial
 
-from Modelos import Polar
-from Modelos.Polar import NRZL as NRZL
-from Modelos.Polar import NRZI as NRZI
-from Modelos.Polar import RZ as RZ
-from Modelos.Polar import Manchester as M
-from Modelos.Polar import ManchesterDiferencial as MD
-
-from Modelos import Bipolar
-from Modelos.Bipolar import AMI as AMI
-from Modelos.Bipolar import B8ZS as B8ZS
-from Modelos.Bipolar import HDB3 as HDB3
+from Modelos.Bipolar.AMI import AMI
+from Modelos.Bipolar.B8ZS import B8ZS
+from Modelos.Bipolar.HDB3 import HDB3
 
 class MainControl:
     def __init__(self):
         print("MainControl inicializado")
         # Mapeo de métodos a clases
         self.codificadores = {
+            "Unipolar": Unipolar,
             "NRZ-L": NRZL,
             "NRZ-I": NRZI,
             "RZ": RZ,
-            "Manchester": M,
-            "Manchester Diferencial": MD,
+            "Manchester": Manchester,
+            "Manchester Diferencial": ManchesterDiferencial,
             "AMI": AMI,
             "B8ZS": B8ZS,
             "HDB3": HDB3,
-            # etc...
         }
 
     def recibir_datos(self, metodo, serial):
-        """Recibe los datos desde la interfaz."""
         print(".---Datos recibidos---.")
         self.remitir_datos(metodo, serial)
 
     def remitir_datos(self, metodo, serial):
         """Decide que metodo de codificacion se debe usar y le da los datos."""
         if metodo in self.codificadores:
-            # Crear instancia del codificador
             ClaseCodificador = self.codificadores[metodo]
             codificador = ClaseCodificador(serial)
-
-            # Obtener datos y graficar
             tiempo, senal = codificador.obtener_datos_grafica()
             GraficadorControl(tiempo, senal, metodo, serial)
         else:

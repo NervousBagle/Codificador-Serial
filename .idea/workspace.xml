@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a13102e-f400-4605-ae97-47bf2b36b8e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Modelos/Polar/NRZI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modelos/Polar/NRZL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vistas/GraficadorVista.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modelos/Bipolar/AMI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controladores/MainControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controladores/MainControl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelos/Polar/NRZ-I.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controladores/GraficadorControl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelos/Polar/NRZ-L.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Graficador.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vistas/MainForm.py" beforeDir="false" afterPath="$PROJECT_DIR$/Vistas/MainForm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelos/Bipolar/AMI.pyi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelos/Bipolar/B8ZS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Bipolar/B8ZS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelos/Bipolar/HDB3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Bipolar/HDB3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelos/Polar/Manchester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Polar/Manchester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelos/Polar/ManchesterDiferencial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Polar/ManchesterDiferencial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelos/Polar/NRZI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Polar/NRZI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelos/Polar/RZ.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Polar/RZ.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelos/Unipolar.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Unipolar.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +56,13 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/USER/PycharmProjects/CodificadorSerial/Modelos/Polar",
+    "last_opened_file_path": "C:/Users/USER/PycharmProjects/CodificadorSerial/Modelos",
     "settings.editor.selected.configurable": "Docker"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\PycharmProjects\CodificadorSerial\Modelos" />
       <recent name="C:\Users\USER\PycharmProjects\CodificadorSerial\Modelos\Polar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
