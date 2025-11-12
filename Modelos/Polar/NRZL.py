@@ -8,9 +8,9 @@ class NRZL:
         niveles = []
         for bit in self.serial:
             if bit == '1':
-                niveles.append(1)  # Nivel alto
+                niveles.append(-1)  # Cambiar de 1 a -1
             else:
-                niveles.append(-1)  # Nivel bajo
+                niveles.append(1)   # Cambiar de -1 a 1
         return niveles
 
     def obtener_datos_grafica(self):
@@ -19,7 +19,6 @@ class NRZL:
         senal = []
 
         for i, nivel in enumerate(self.resultado):
-            # Cada bit ocupa de t=i hasta t=i+1
             tiempo.append(i)
             tiempo.append(i + 1)
             senal.append(nivel)

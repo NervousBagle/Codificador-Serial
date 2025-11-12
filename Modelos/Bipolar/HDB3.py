@@ -6,7 +6,7 @@ class HDB3:
     def codificar(self):
         """Codifica el serial usando HDB3 (High-Density Bipolar 3-Zero)"""
         signal = []
-        polaridad = 1
+        polaridad = -0.5  # Cambiar de 1 a -0.5 e invertir inicio
         contador_ceros = 0
         contador_unos_desde_sustitucion = 0
 
@@ -20,16 +20,13 @@ class HDB3:
                 contador_ceros += 1
                 signal.append(0)
 
-                # Si hay 4 ceros consecutivos, aplicar regla HDB3
                 if contador_ceros == 4:
                     base = len(signal) - 4
 
                     if contador_unos_desde_sustitucion % 2 == 0:
-                        # B00V -> marca al inicio y violación al final
                         signal[base + 0] = polaridad
                         signal[base + 3] = polaridad
                     else:
-                        # 000V -> solo violación al final (polaridad opuesta)
                         signal[base + 3] = -polaridad
 
                     contador_ceros = 0

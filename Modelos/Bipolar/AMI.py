@@ -6,7 +6,7 @@ class AMI:
     def codificar(self):
         """Codifica el serial usando AMI (Alternate Mark Inversion)"""
         niveles = []
-        polaridad = 1
+        polaridad = 0.5  # Cambiado de 1 a 0.5
 
         for bit in self.serial:
             if bit == '1':

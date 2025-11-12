@@ -5,9 +5,12 @@ class Manchester:
 
     def codificar(self):
         """Codifica el serial usando Manchester"""
-        # Manchester tiene transición en medio del bit
-        # Retorna lista de tuplas (nivel1, nivel2) para cada bit
         transiciones = []
+        # Necesitamos determinar el primer nivel basado en un bit '1' previo imaginario
+        # Un bit '1' va de alto a bajo, termina en bajo
+        # El siguiente bit '0' iría de bajo a alto
+        # El siguiente bit '1' iría de alto a bajo
+
         for bit in self.serial:
             if bit == '1':
                 transiciones.append((1, -1))  # alto a bajo

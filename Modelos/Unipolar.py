@@ -8,7 +8,7 @@ class Unipolar:
         niveles = []
         for bit in self.serial:
             if bit == '1':
-                niveles.append(1)
+                niveles.append(0.5)
             else:
                 niveles.append(0)
         return niveles

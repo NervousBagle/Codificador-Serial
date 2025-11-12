@@ -6,7 +6,7 @@ class B8ZS:
     def codificar(self):
         """Codifica el serial usando B8ZS (Bipolar with 8-Zero Substitution)"""
         signal = []
-        polaridad = 1
+        polaridad = -0.5  # Cambiar de 1 a -0.5 e invertir inicio
         contador_ceros = 0
 
         for bit in self.serial:
@@ -18,18 +18,17 @@ class B8ZS:
                 contador_ceros += 1
                 signal.append(0)
 
-                # Si hay 8 ceros consecutivos, aplicar patrón 000VB0VB
                 if contador_ceros == 8:
                     ultima_polaridad = polaridad
                     base = len(signal) - 8
                     signal[base + 0] = 0
                     signal[base + 1] = 0
                     signal[base + 2] = 0
-                    signal[base + 3] = ultima_polaridad  # V
-                    signal[base + 4] = -ultima_polaridad  # B
+                    signal[base + 3] = ultima_polaridad
+                    signal[base + 4] = -ultima_polaridad
                     signal[base + 5] = 0
-                    signal[base + 6] = -ultima_polaridad  # V
-                    signal[base + 7] = ultima_polaridad  # B
+                    signal[base + 6] = -ultima_polaridad
+                    signal[base + 7] = ultima_polaridad
                     contador_ceros = 0
 
         return signal

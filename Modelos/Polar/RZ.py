@@ -5,13 +5,12 @@ class RZ:
 
     def codificar(self):
         """Codifica el serial usando RZ (Return to Zero)"""
-        # Retorna lista de tuplas (nivel_primera_mitad, nivel_segunda_mitad)
         transiciones = []
         for bit in self.serial:
             if bit == '1':
-                transiciones.append((1, 0))  # alto luego cero
+                transiciones.append((0.5, 0))  # sube a 0.5, regresa a 0
             else:
-                transiciones.append((0, 0))  # cero todo el tiempo
+                transiciones.append((-0.5, 0))  # baja a -0.5, regresa a 0
         return transiciones
 
     def obtener_datos_grafica(self):

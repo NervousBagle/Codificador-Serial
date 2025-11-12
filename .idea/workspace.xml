@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a13102e-f400-4605-ae97-47bf2b36b8e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Modelos/Bipolar/AMI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controladores/MainControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controladores/MainControl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelos/Bipolar/AMI.pyi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelos/Bipolar/AMI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Bipolar/AMI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modelos/Bipolar/B8ZS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Bipolar/B8ZS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modelos/Bipolar/HDB3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Bipolar/HDB3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modelos/Polar/Manchester.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Polar/Manchester.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelos/Polar/ManchesterDiferencial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Polar/ManchesterDiferencial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelos/Polar/NRZI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Polar/NRZI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelos/Polar/NRZL.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Polar/NRZL.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modelos/Polar/RZ.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Polar/RZ.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modelos/Unipolar.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Unipolar.py" afterDir="false" />
     </list>
@@ -44,22 +41,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.Main.executor": "Run",
-    "Python.MainForm.executor": "Run",
-    "Python.Unipolar.executor": "Run",
-    "Python.VentanaPrincipal.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/USER/PycharmProjects/CodificadorSerial/Modelos",
-    "settings.editor.selected.configurable": "Docker"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MainForm.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Unipolar.executor&quot;: &quot;Run&quot;,
+    &quot;Python.VentanaPrincipal.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/PycharmProjects/CodificadorSerial/Modelos&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\USER\PycharmProjects\CodificadorSerial\Modelos" />
