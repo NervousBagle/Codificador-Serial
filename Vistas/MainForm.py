@@ -97,6 +97,7 @@ class App(ctk.CTk):
             messagebox.showwarning("Advertencia", "Debe seleccionar un método de codificación.")
             return
 
-        MainControl.recibir_datos(self, metodo_codificador, serial_ingresado)
+        controlador = MainControl()
+        controlador.recibir_datos(metodo_codificador, serial_ingresado)
 
 App().mainloop()
