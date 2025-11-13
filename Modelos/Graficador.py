@@ -6,7 +6,6 @@ class Graficador:
         self.serial_original = serial_original
 
     def obtener_datos(self):
-        """Retorna los datos necesarios para graficar"""
         return {
             'tiempo': self.tiempo,
             'senal': self.senal,

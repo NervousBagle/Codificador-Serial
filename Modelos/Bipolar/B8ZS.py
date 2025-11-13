@@ -4,9 +4,8 @@ class B8ZS:
         self.resultado = self.codificar()
 
     def codificar(self):
-        """Codifica el serial usando B8ZS (Bipolar with 8-Zero Substitution)"""
         signal = []
-        polaridad = -0.5  # Cambiar de 1 a -0.5 e invertir inicio
+        polaridad = -0.5
         contador_ceros = 0
 
         for bit in self.serial:
@@ -34,7 +33,6 @@ class B8ZS:
         return signal
 
     def obtener_datos_grafica(self):
-        """Genera los datos para matplotlib en formato escalonado"""
         tiempo = []
         senal = []
 

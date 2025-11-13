@@ -4,9 +4,8 @@ class HDB3:
         self.resultado = self.codificar()
 
     def codificar(self):
-        """Codifica el serial usando HDB3 (High-Density Bipolar 3-Zero)"""
         signal = []
-        polaridad = -0.5  # Cambiar de 1 a -0.5 e invertir inicio
+        polaridad = -0.5
         contador_ceros = 0
         contador_unos_desde_sustitucion = 0
 
@@ -35,7 +34,6 @@ class HDB3:
         return signal
 
     def obtener_datos_grafica(self):
-        """Genera los datos para matplotlib en formato escalonado"""
         tiempo = []
         senal = []
 

@@ -4,21 +4,19 @@ class AMI:
         self.resultado = self.codificar()
 
     def codificar(self):
-        """Codifica el serial usando AMI (Alternate Mark Inversion)"""
         niveles = []
-        polaridad = 0.5  # Cambiado de 1 a 0.5
+        polaridad = 0.5
 
         for bit in self.serial:
             if bit == '1':
                 niveles.append(polaridad)
-                polaridad *= -1  # alternar polaridad
+                polaridad *= -1
             else:
                 niveles.append(0)
 
         return niveles
 
     def obtener_datos_grafica(self):
-        """Genera los datos para matplotlib en formato escalonado"""
         tiempo = []
         senal = []
 

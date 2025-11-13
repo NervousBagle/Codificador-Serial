@@ -4,19 +4,17 @@ class NRZI:
         self.resultado = self.codificar()
 
     def codificar(self):
-        """Codifica el serial usando NRZ-I"""
         niveles = []
-        nivel_actual = 1  # nivel inicial
+        nivel_actual = 1
 
         for bit in self.serial:
             if bit == '1':
-                nivel_actual *= -1  # cambia nivel si hay 1
+                nivel_actual *= -1
             niveles.append(nivel_actual)
 
         return niveles
 
     def obtener_datos_grafica(self):
-        """Genera los datos para matplotlib en formato escalonado"""
         tiempo = []
         senal = []
 
