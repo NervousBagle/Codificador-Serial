@@ -28,12 +28,12 @@ class MainControl:
             "HDB3": HDB3,
         }
 
+    # Obtiene los datos de la vista.
     def recibir_datos(self, metodo, serial):
-        print(".---Datos recibidos---.")
         self.remitir_datos(metodo, serial)
 
+    # Decide que metodo de codificacion se debe usar y le da los datos.
     def remitir_datos(self, metodo, serial):
-        """Decide que metodo de codificacion se debe usar y le da los datos."""
         if metodo in self.codificadores:
             ClaseCodificador = self.codificadores[metodo]
             codificador = ClaseCodificador(serial)
