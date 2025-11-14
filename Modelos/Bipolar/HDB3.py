@@ -1,7 +1,25 @@
+from tkinter import messagebox
+
+
 class HDB3:
     def __init__(self, serial):
         self.serial = serial
+        self.serial_validado = self._validar_serial(4)
+        if not self.serial_validado:
+            messagebox.showwarning("Advertencia",
+                                   "HDB3 requiere al menos una secuencia de 4 ceros en el serial para poder codificarlo")
+            self.resultado = []
+            return
         self.resultado = self.codificar()
+
+    def _validar_serial(self, validacion):
+        contador_ceros = 0
+        for bit in self.serial:
+            if bit == '0':
+                contador_ceros += 1
+            if contador_ceros >= validacion:
+                return True
+        return False
 
     def codificar(self):
         signal = []
