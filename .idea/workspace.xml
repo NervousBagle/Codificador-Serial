@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a13102e-f400-4605-ae97-47bf2b36b8e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelos/Bipolar/B8ZS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Bipolar/B8ZS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelos/Bipolar/HDB3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modelos/Bipolar/HDB3.py" afterDir="false" />
-    </list>
+    <list default="true" id="4a13102e-f400-4605-ae97-47bf2b36b8e0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
